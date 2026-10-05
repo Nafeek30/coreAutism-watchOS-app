@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSSensorKitUsageDescription</key>
+    <string>CoreAutism studies physiological signals recorded by Apple Watch during research activities.</string>
+    <!-- Development-test privacy notice; replace with the reviewed study policy before participant use. -->
+    <key>NSSensorKitPrivacyPolicyURL</key>
+    <string>https://coreautism-development-privacy.nafeek30.chatgpt.site</string>
+    <key>NSSensorKitUsageDetail</key>
+    <dict>
+        <key>SRSensorUsagePPG</key>
+        <dict>
+            <key>Description</key>
+            <string>CoreAutism collects Apple Watch optical pulse (PPG) measurements and their associated motion and quality information to study physiological changes during research activities.</string>
+            <key>Required</key>
+            <true/>
+        </dict>
+        <key>SRSensorUsageMotion</key>
+        <dict>
+            <key>Description</key>
+            <string>CoreAutism uses motion measurements associated with the Apple Watch recording to describe recording quality.</string>
+        </dict>
+        <key>SRSensorUsageWristDetection</key>
+        <dict>
+            <key>Description</key>
+            <string>CoreAutism uses wrist-worn state information to identify whether the Apple Watch was being worn during a recording.</string>
+        </dict>
+        <key>SRSensorUsageECG</key>
+        <dict>
+            <key>Description</key>
+            <string>CoreAutism may use ECG information associated with an approved recording to support physiological analysis.</string>
+        </dict>
+        <key>SRSensorUsageHeartRate</key>
+        <dict>
+            <key>Description</key>
+            <string>CoreAutism may use heart-rate information associated with an approved recording to support physiological analysis.</string>
+        </dict>
+    </dict>
+    <key>UIFileSharingEnabled</key>
+    <true/>
+    <key>LSSupportsOpeningDocumentsInPlace</key>
+    <true/>
+</dict>
+</plist>

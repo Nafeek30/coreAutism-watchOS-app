@@ -39,10 +39,43 @@
 		B17A56DF2F3AE0E8008C094F /* CoreAutismAcc Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreAutismAcc Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C0DE00012F3AE0E8008C094F /* Exceptions for "CoreAutismAcc Watch App" folder in "CoreAutismAcc Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B17A56DE2F3AE0E8008C094F /* CoreAutismAcc Watch App */;
+		};
+		C0DE00022F3AE0E8008C094F /* Exceptions for "CoreAutismAcc iOS App" folder in "CoreAutismAcc" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B17A56D82F3AE0E8008C094F /* CoreAutismAcc */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B17A56E32F3AE0E8008C094F /* CoreAutismAcc Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C0DE00012F3AE0E8008C094F /* Exceptions for "CoreAutismAcc Watch App" folder in "CoreAutismAcc Watch App" target */,
+			);
 			path = "CoreAutismAcc Watch App";
+			sourceTree = "<group>";
+		};
+		C0DE00032F3AE0E8008C094F /* CoreAutismAcc iOS App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C0DE00022F3AE0E8008C094F /* Exceptions for "CoreAutismAcc iOS App" folder in "CoreAutismAcc" target */,
+			);
+			path = "CoreAutismAcc iOS App";
+			sourceTree = "<group>";
+		};
+		C0DE00062F3AE0E8008C094F /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,12 +88,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0DE00042F3AE0E8008C094F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B17A56D22F3AE0E8008C094F = {
 			isa = PBXGroup;
 			children = (
+				C0DE00032F3AE0E8008C094F /* CoreAutismAcc iOS App */,
+				C0DE00062F3AE0E8008C094F /* Shared */,
 				B17A56E32F3AE0E8008C094F /* CoreAutismAcc Watch App */,
 				B17A56DA2F3AE0E8008C094F /* Products */,
 			);
@@ -82,6 +124,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B17A56F02F3AE0E8008C094F /* Build configuration list for PBXNativeTarget "CoreAutismAcc" */;
 			buildPhases = (
+				C0DE00052F3AE0E8008C094F /* Sources */,
+				C0DE00042F3AE0E8008C094F /* Frameworks */,
 				B17A56D72F3AE0E8008C094F /* Resources */,
 				B17A56EF2F3AE0E8008C094F /* Embed Watch Content */,
 			);
@@ -90,12 +134,16 @@
 			dependencies = (
 				B17A56E22F3AE0E8008C094F /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				C0DE00032F3AE0E8008C094F /* CoreAutismAcc iOS App */,
+				C0DE00062F3AE0E8008C094F /* Shared */,
+			);
 			name = CoreAutismAcc;
 			packageProductDependencies = (
 			);
 			productName = CoreAutismAcc;
 			productReference = B17A56D92F3AE0E8008C094F /* CoreAutismAcc.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
+			productType = "com.apple.product-type.application";
 		};
 		B17A56DE2F3AE0E8008C094F /* CoreAutismAcc Watch App */ = {
 			isa = PBXNativeTarget;
@@ -111,6 +159,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				B17A56E32F3AE0E8008C094F /* CoreAutismAcc Watch App */,
+				C0DE00062F3AE0E8008C094F /* Shared */,
 			);
 			name = "CoreAutismAcc Watch App";
 			packageProductDependencies = (
@@ -176,6 +225,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		B17A56DB2F3AE0E8008C094F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DE00052F3AE0E8008C094F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,25 +369,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "CoreAutismAcc Watch App/CoreAutismAcc Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 654UYUGNWP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreAutismAcc Watch App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CoreAutismAcc;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to workout data for high-frequency sensor recording.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to start workouts to record high-frequency sensor data.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio.";
-				INFOPLIST_KEY_NSMotionUsageDescription = "We need access to motion data for high-frequency sensor recording.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to workout and heart-rate data for research recording.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to start a workout to collect heart-rate data during research recording.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access to record participant voice sessions.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKWatchOnly = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = edu.missouri.CoreAutism;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreAutismAcc.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.CoreAutism.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -341,7 +399,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Debug;
 		};
@@ -351,25 +409,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "CoreAutismAcc Watch App/CoreAutismAcc Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 654UYUGNWP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreAutismAcc Watch App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CoreAutismAcc;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to workout data for high-frequency sensor recording.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to start workouts to record high-frequency sensor data.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio.";
-				INFOPLIST_KEY_NSMotionUsageDescription = "We need access to motion data for high-frequency sensor recording.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to workout and heart-rate data for research recording.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to start a workout to collect heart-rate data during research recording.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access to record participant voice sessions.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKWatchOnly = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = edu.missouri.CoreAutism;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreAutismAcc.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.CoreAutism.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -380,41 +440,76 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
 		B17A56F12F3AE0E8008C094F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CoreAutismAcc iOS App/CoreAutismAcc.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 654UYUGNWP;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreAutismAcc iOS App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CoreAutismAcc;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreAutismAcc;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.CoreAutism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B17A56F22F3AE0E8008C094F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CoreAutismAcc iOS App/CoreAutismAcc.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 654UYUGNWP;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreAutismAcc iOS App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CoreAutismAcc;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreAutismAcc;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.CoreAutism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
